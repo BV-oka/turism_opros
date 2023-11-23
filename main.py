@@ -8,7 +8,7 @@ if st.button('Нажми на меня'):
 
 
 # Название
-st.title("Песочница")
+st.title("Туризм муниципальное образование город Алексин")
 
 # Заголовок
 st.header("Это заголовок")
@@ -21,10 +21,6 @@ st.subheader("Это подзаголовок")
 
 # Текст
 st.text("Просто текст")
-
-# полоски
-st.divider()
-st.divider()
 
 st.success("Success")
 st.info("Information")
@@ -45,6 +41,14 @@ if (gender == 'муж'):
 else:
     st.success("жен")
    
+# полоска
+st.divider()
+
+
+# слайдер
+age = st.slider('How old are you?', 0, 100, 35)
+st.write("вы выбрали респондентов в возрасте", age)
+
 
 
 
