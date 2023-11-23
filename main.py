@@ -46,7 +46,7 @@ st.divider()
 
 
 # слайдер
-age = st.slider('How old are you?', 0, 100, 35)
+age = st.slider('Укажите возраст респондентов', 0, 100, 35)
 st.write("вы выбрали респондентов в возрасте", age)
 
 
