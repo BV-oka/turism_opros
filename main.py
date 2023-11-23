@@ -40,7 +40,7 @@ st.error("Error")
 
 gender = st.radio("выберите пол респондентов: ", ('муж', 'жен'), horizontal=True)
 
-if ( == 'муж'):
+if (gender == 'муж'):
     st.success("муж")
 else:
     st.success("жен")
