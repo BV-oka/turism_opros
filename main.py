@@ -22,22 +22,18 @@ st.error("Error")
 # st.snow()
 # st.balloons()
 
-# переключатели
 
-gender = st.radio("выберите пол респондентов: ", ('муж', 'жен'), horizontal=True)
-
-if (gender == 'муж'):
-    st.success("муж")
-else:
-    st.success("жен")
-   
 # полоска
 st.divider()
 
+# переключатель пола
+gender = st.radio("выберите пол респондентов: ", ('муж', 'жен'), horizontal=True)
 
-# слайдер
+# слайдер возраста
 age = st.slider('Укажите возраст респондентов', 0, 100, 35)
-st.write("вы выбрали респондентов в возрасте", age)
+
+if gender == 'муж':
+    st.write("вы выбрали респондентов мужчин в возрасте", age)
 
 # ещё полоска
 st.divider()
