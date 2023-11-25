@@ -15,7 +15,7 @@ st.subheader("визуализация результатов опроса по 
 # Текст
 st.text("Просто текст")
 
-st.success("Success")
+st.success("Успех")
 st.info("Information")
 st.warning("Warning")
 st.error("Error")
