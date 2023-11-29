@@ -77,7 +77,8 @@ values = st.slider(
 st.write('Values:', values)
 
 # url = 'https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv'
-url = 'https://github.com/BV-oka/turism_opros/blob/main/data/2023-11-23_Opros_po_razvitiiu_turizma.csv'
+# url = 'https://github.com/BV-oka/turism_opros/blob/main/data/2023-11-23_Opros_po_razvitiiu_turizma.csv'
+url = 'main/data/2023-11-23_Opros_po_razvitiiu_turizma.csv'
 df = pd.read_csv(url,index_col=0)
 #df = pd.read_csv(url)
 
