@@ -3,7 +3,7 @@ import streamlit as st
 # импортируем библиотеку pandas
 import pandas as pd
 
-st.markdown("# Main page 🎈")
+st.markdown("# Главная страница 🎈")
 st.sidebar.markdown("# Main page 🎈")
 
 # Название
