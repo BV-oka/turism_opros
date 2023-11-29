@@ -7,6 +7,7 @@ import numpy as np
 st.markdown("# Туризм")
 st.sidebar.markdown("# главная page 🎈")
 
+
 # Название
 st.sidebar.title("что-то")
 
