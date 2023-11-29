@@ -79,7 +79,7 @@ st.write('Values:', values)
 # url = 'https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv'
 # url = 'https://github.com/BV-oka/turism_opros/blob/main/data/2023-11-23_Opros_po_razvitiiu_turizma.csv'
 
-df = pd.read_csv("https://github.com/BV-oka/turism_opros/blob/main/data/2023-11-23_Opros_po_razvitiiu_turizma.csv")
+df = pd.read_csv("https://rowgithubusercontent.com/BV-oka/turism_opros/blob/main/data/2023-11-23_Opros_po_razvitiiu_turizma.csv")
 #df = pd.read_csv(url)
 
 # print(df.head(2))
