@@ -79,5 +79,5 @@ values = st.slider(
 st.write('Values:', values)
 
 df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
-print(df.head())
+st.dataframe(df)
 
