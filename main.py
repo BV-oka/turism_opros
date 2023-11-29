@@ -82,4 +82,5 @@ st.write('Values:', values)
 df = pd.read_csv("https://github.com/BV-oka/turism_opros/blob/main/data/2023-11-23_Opros_po_razvitiiu_turizma.csv")
 #df = pd.read_csv(url)
 
-print(df.head(2))
+# print(df.head(2))
+df.head()
