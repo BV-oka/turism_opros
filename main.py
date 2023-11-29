@@ -4,7 +4,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-
 st.markdown("# Туризм муниципальное образование город Алексин")
 st.sidebar.markdown("# главная page 🎈")
 
