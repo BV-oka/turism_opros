@@ -18,7 +18,7 @@ st.subheader("визуализация результатов опроса по 
 # Текст
 st.sidebar.text("Просто текст")
 
-st.success("Успех")
+st.sidebar.success("Успех")
 st.info("Information")
 st.warning("Warning")
 st.error("Error")
@@ -30,7 +30,7 @@ st.error("Error")
 st.divider()
 
 # переключатель пола
-gender = st.radio("выберите пол респондентов: ", ('муж', 'жен'), horizontal=True)
+gender = st.sidebar.radio("выберите пол респондентов: ", ('муж', 'жен'), horizontal=True)
 
 # слайдер возраста
 age = st.slider('Укажите возраст респондентов', 0, 100, 35)
