@@ -77,3 +77,7 @@ values = st.slider(
     'Select a range of values',
     0.0, 100.0, (25.0, 75.0))
 st.write('Values:', values)
+
+df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
+df.head()
+
