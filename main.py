@@ -76,7 +76,9 @@ values = st.sidebar.slider(
     0.0, 100.0, (25.0, 75.0))
 st.sidebar.write('Values:', values)
 
+# читаем таблицу с опросом
 df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
 
-st.dataframe(df)
+# таблица с опросом вывести на экран целиком
+# st.dataframe(df)
 
