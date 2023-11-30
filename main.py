@@ -17,17 +17,6 @@ st.header("муниципальное образование город Алек
 # Подзаголовок
 st.subheader("визуализация результатов опроса по развитию туризма")
 
-# Текст
-st.sidebar.text("Просто текст")
-
-st.sidebar.success("Успех")
-st.sidebar.info("Information")
-st.sidebar.warning("Warning")
-st.sidebar.error("Error")
-# st.snow()
-# st.balloons()
-
-
 # полоска
 st.sidebar.divider()
 
@@ -44,15 +33,15 @@ age = st.sidebar.radio("укажите возраст респондентов: 
 st.sidebar.divider()
 
 # переключатель отношения
-att = st.sidebar.radio("укажите отношение к туристам респондентов: ", ('все','положительное', 'отрицательное'), horizontal=False)
+att = st.sidebar.radio("укажите отношение респондентов к туристам: ", ('все','положительное', 'отрицательное'), horizontal=False)
 
 # ещё полоска
 st.sidebar.divider()
 
 col1, col2, col3 = st.columns(3)
-col1.metric(label="пол", value=gender, delta="1.2 °F")
-col2.metric("Wind", "9 mph", "-8%")
-col3.metric("Humidity", "86%", "4%")
+col1.metric(label="пол", value=gender)
+col2.metric(label="возраст", value=age)
+col3.metric(label="отношение", value=att)
 
 
 
@@ -83,3 +72,15 @@ df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
 
 # таблица с опросом вывести на экран только мероприятия
 st.dataframe(df)
+
+
+
+# Текст
+st.sidebar.text("Просто текст")
+
+st.sidebar.success("Успех")
+st.sidebar.info("Information")
+st.sidebar.warning("Warning")
+st.sidebar.error("Error")
+# st.snow()
+# st.balloons()
