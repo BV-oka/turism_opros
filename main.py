@@ -62,7 +62,7 @@ df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
 
 
 # график
-chart_data = pd.DataFrame(df, columns=["укажите Ваш пол", "укажите Ваш возраст", "c"])
+chart_data = pd.DataFrame(df, columns=["укажите Ваш пол", "укажите Ваш возраст"])
 
 
 st.bar_chart(chart_data)
