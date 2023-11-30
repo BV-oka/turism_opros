@@ -38,7 +38,7 @@ att = st.sidebar.radio("укажите отношение респонденто
 # ещё полоска
 st.sidebar.divider()
 
-st.success("Вы выбрали следующие параметры респондентов")
+st.success("Вы выбрали следующие параметры респондентов:")
 
 col1, col2, col3 = st.columns(3)
 col1.metric(label="пол", value=gender)
