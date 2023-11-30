@@ -77,7 +77,7 @@ st.dataframe(df["Какие событийные мероприятия, по В
 
 # фильтрация строк
 plus = df[df.отношение == 'положительное']
-st.dataframe(df)
+st.dataframe(plus)
 
 # Текст
 st.sidebar.text("Просто текст")
