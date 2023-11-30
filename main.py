@@ -86,4 +86,4 @@ df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
 # st.dataframe(df)
 
 # таблица с опросом вывести на экран только мероприятия
-st.dataframe(df[4])
+st.dataframe(df)
