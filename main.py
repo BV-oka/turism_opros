@@ -69,6 +69,13 @@ st.sidebar.write('You selected:', option)
 # читаем таблицу с опросом
 df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
 
+
+# график
+chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
+
+st.bar_chart(chart_data)
+
+
 # таблица с опросом вывести на экран целиком
 # st.dataframe(df)
 
