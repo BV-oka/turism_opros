@@ -38,6 +38,8 @@ att = st.sidebar.radio("укажите отношение респонденто
 # ещё полоска
 st.sidebar.divider()
 
+st.success("Вы выбрали следующие параметры респондентов")
+
 col1, col2, col3 = st.columns(3)
 col1.metric(label="пол", value=gender)
 col2.metric(label="возраст", value=age)
@@ -78,7 +80,7 @@ st.dataframe(df)
 # Текст
 st.sidebar.text("Просто текст")
 
-st.sidebar.success("Успех")
+
 st.sidebar.info("Information")
 st.sidebar.warning("Warning")
 st.sidebar.error("Error")
