@@ -32,14 +32,16 @@ st.sidebar.error("Error")
 st.sidebar.divider()
 
 # переключатель пола
-gender = st.sidebar.radio("выберите пол респондентов: ", ('муж', 'жен'), horizontal=True)
-
-# слайдер возраста
-age = st.sidebar.slider('Укажите возраст респондентов', 0, 100, 35)
+gender = st.sidebar.radio("выберите пол респондентов: ", ('все','муж','жен'), horizontal=True)
 
 # ещё полоска
 st.sidebar.divider()
 
+# переключатель возраста
+age = st.sidebar.radio("укажите возраст респондентов: ", ('все','до 35', '36-45','46-55', 'сиарше 55'), horizontal=False)
+
+# ещё полоска
+st.sidebar.divider()
 
 if gender == 'муж':
     st.sidebar.write("вы выбрали респондентов мужчин в возрасте", age)
