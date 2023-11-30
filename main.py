@@ -50,7 +50,7 @@ att = st.sidebar.radio("укажите отношение к туристам р
 st.sidebar.divider()
 
 col1, col2, col3 = st.columns(3)
-col1.metric(label="Temperature", value="70 °F", delta="1.2 °F")
+col1.metric(label="пол", value=gender, delta="1.2 °F")
 col2.metric("Wind", "9 mph", "-8%")
 col3.metric("Humidity", "86%", "4%")
 
