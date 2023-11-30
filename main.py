@@ -90,7 +90,7 @@ st.dataframe(minus["Какие событийные мероприятия, по
 # selecting rows based on condition 
 # rslt_df = dataframe[(dataframe['Age'] == 22) & 
         #  dataframe['Stream'].isin(options)] 
-
+st.dataframe(minus)
 
 
 # Текст
