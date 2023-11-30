@@ -55,23 +55,14 @@ else:
 # ещё полоска
 st.sidebar.divider()
 
-if st.sidebar.button('я кнопка -  Нажми на меня'):
-  st.sidebar.write('надпись - результат нажатия на кнопку!')
 
-
-
-option = st.sidebar.selectbox(
-    'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone'))
-
-st.sidebar.write('You selected:', option)
 
 # читаем таблицу с опросом
 df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
 
 
 # график
-chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
+chart_data = pd.DataFrame(df, columns=["a", "b", "c"])
 
 st.bar_chart(chart_data)
 
@@ -93,3 +84,16 @@ st.sidebar.warning("Warning")
 st.sidebar.error("Error")
 # st.snow()
 # st.balloons()
+
+
+
+if st.sidebar.button('я кнопка -  Нажми на меня'):
+  st.sidebar.write('надпись - результат нажатия на кнопку!')
+
+
+
+option = st.sidebar.selectbox(
+    'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone'))
+
+st.sidebar.write('You selected:', option)
