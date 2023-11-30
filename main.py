@@ -38,7 +38,7 @@ gender = st.sidebar.radio("выберите пол респондентов: ", 
 st.sidebar.divider()
 
 # переключатель возраста
-age = st.sidebar.radio("укажите возраст респондентов: ", ('все','до 35', '36-45','46-55', 'сиарше 55'), horizontal=False)
+age = st.sidebar.radio("укажите возраст респондентов: ", ('все','до 35', '36-45','46-55', 'старше 55'), horizontal=False)
 
 # ещё полоска
 st.sidebar.divider()
@@ -85,3 +85,5 @@ df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
 # таблица с опросом вывести на экран целиком
 # st.dataframe(df)
 
+# таблица с опросом вывести на экран только мероприятия
+st.dataframe(df(5))
