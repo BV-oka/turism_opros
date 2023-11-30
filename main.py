@@ -80,6 +80,17 @@ plus = df[df.отношение == 'положительное']
 # st.dataframe(plus)
 st.dataframe(plus["Какие событийные мероприятия, по Вашему мнению, будут интересны жителям и гостям города?"])
 
+plus = df[(df.отношение == 'отрицательное']) & (df.пол == 'муж')]
+st.dataframe(plus["Какие событийные мероприятия, по Вашему мнению, будут интересны жителям и гостям города?"])
+
+# множество столбцов фильтруем
+# options = ['Commerce' ,'Science'] 
+   
+# selecting rows based on condition 
+# rslt_df = dataframe[(dataframe['Age'] == 22) & 
+        #  dataframe['Stream'].isin(options)] 
+
+
 
 # Текст
 st.sidebar.text("Просто текст")
