@@ -67,15 +67,6 @@ st.sidebar.divider()
 if st.sidebar.button('я кнопка -  Нажми на меня'):
   st.sidebar.write('надпись - результат нажатия на кнопку!')
 
-genre = st.sidebar.radio(
-    "What's your favorite movie genre",
-    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
-    captions = ["Laugh out loud.", "Get the popcorn.", "Never stop learning."])
-
-if genre == ':rainbow[Comedy]':
-    st.sidebar.success('You selected comedy.')
-else:
-    st.sidebar.write("You didn\'t select comedy.")
 
 
 option = st.sidebar.selectbox(
@@ -83,14 +74,6 @@ option = st.sidebar.selectbox(
     ('Email', 'Home phone', 'Mobile phone'))
 
 st.sidebar.write('You selected:', option)
-
-
-# слайдер интервал
-
-values = st.sidebar.slider(
-    'Select a range of values',
-    0.0, 100.0, (25.0, 75.0))
-st.sidebar.write('Values:', values)
 
 # читаем таблицу с опросом
 df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
