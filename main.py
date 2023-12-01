@@ -81,21 +81,9 @@ st.dataframe(rslt_df)
 
 
 # фильтрация строк таблицы по отношению к туризму и вывод только мероприятий
-plus = df[df.отношение == 'положительное']
-# st.dataframe(plus)
-st.dataframe(plus["Какие событийные мероприятия, по Вашему мнению, будут интересны жителям и гостям города?"])
-
 minus = df[df.отношение == 'отрицательное'] 
-# & (df.пол == 'муж')]
 st.dataframe(minus["Какие событийные мероприятия, по Вашему мнению, будут интересны жителям и гостям города?"])
 
-# множество столбцов фильтруем
-# options = ['Commerce' ,'Science'] 
-   
-# selecting rows based on condition 
-# rslt_df = dataframe[(dataframe['Age'] == 22) & 
-        #  dataframe['Stream'].isin(options)] 
-st.dataframe(minus)
 
 
 # Текст
