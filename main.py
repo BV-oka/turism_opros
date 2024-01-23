@@ -80,7 +80,7 @@ val_count  = dfopr['gender'].value_counts()
 val_count
 # st.bar_chart(data=val_count, x='gender', y='count')
 
-dfopr
+
 dfopr1=pd.DataFrame([['Earth', 1], ['Moon', 0.606], ['Mars', 0.107], ['Венера', 0.807]], columns=['name', 'mass'])
 st.bar_chart(data=dfopr1, x='name', y='mass')
 
