@@ -72,7 +72,7 @@ st.bar_chart(chart_data)
 chart_data = pd.DataFrame(df, columns=["возраст", "отношение"])
 val_count  = chart_data['возраст'].value_counts()
 val_count
-df1 = dfopr['gender'].value_counts().rename_axis('unique_values').reset_index(name='counts')
+df1 = chart_data['возраст'].value_counts().rename_axis('unique_values').reset_index(name='counts')
 st.bar_chart(data=df1, x='unique_values', y='counts')
 
 
