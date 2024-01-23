@@ -68,15 +68,24 @@ chart_data = pd.DataFrame(df, columns=["пол", "возраст", "отноше
 st.bar_chart(chart_data)
 
 
-# график
+# график измененный 1
 chart_data = pd.DataFrame(df, columns=["возраст", "отношение"])
 val_count  = chart_data['возраст'].value_counts()
 val_count
 df1 = chart_data['возраст'].value_counts().rename_axis('unique_values').reset_index(name='counts')
 st.bar_chart(data=df1, x='unique_values', y='counts')
 
-
+# график измененный 2
+chart_data = pd.DataFrame(df, columns=["возраст", "отношение"])
 st.bar_chart(data=chart_data, x="возраст", y="отношение")
+
+val_count  = chart_data['отношение'].value_counts()
+val_count
+df1 = chart_data['отношение'].value_counts().rename_axis('unique_values').reset_index(name='counts')
+st.bar_chart(data=df1, x='unique_values', y='counts')
+
+
+
 
 # график изменить
 dfopr=pd.DataFrame([[101, 'ivanov', 'муж', 'да'], [102, 'петров', 'муж', 'нет'], [103, 'сидорова', 'жен', 'да'], [104, 'коровин', 'муж', 'нет'], [105, 'кузнецов', 'муж', 'да'], [106, 'дубова', 'жен', 'нет'], [107, 'зайкина', 'жен', 'да']], columns=['id', 'fio', 'gender', 'otvet'])
