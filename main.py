@@ -71,7 +71,7 @@ chart_data = pd.DataFrame(df, columns=["пол", "возраст", "отноше
 
 # фильтр таблицы для графиков
 # ..............................!!!!!!!!!!!!!!!!!!!!!!!!!!!
-st.dataframe(df)
+st.dataframe(chart_data)
 
 rslt_df = df[(df.пол == 'жен') & (df.возраст == 'все') & (df.отношение == 'положительное')]
 st.dataframe(rslt_df)
