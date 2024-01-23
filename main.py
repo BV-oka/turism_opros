@@ -78,7 +78,7 @@ dfopr=pd.DataFrame([[101, 'ivanov', 'муж', 'да'], [102, 'петров', 'м
 dfopr
 val_count  = dfopr['gender'].value_counts()
 val_count
-df1 = df['gender'].value_counts().rename_axis('unique_values').reset_index(name='counts')
+df1 = dfopr['gender'].value_counts().rename_axis('unique_values').reset_index(name='counts')
 st.bar_chart(data=df1, x='gender', y='counts')
 
 
