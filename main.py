@@ -70,7 +70,7 @@ st.bar_chart(chart_data)
 
 
 # график
-chart_data = pd.DataFrame(df, columns=["пол", "возраст", "отношение"])
+chart_data = pd.DataFrame(df, columns=["возраст", "отношение"])
 
 st.bar_chart(chart_data)
 
