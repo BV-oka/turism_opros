@@ -1,4 +1,3 @@
-import seaborn as sns
 # импортируем библиотеку streamlit
 import streamlit as st
 # импортируем библиотеку pandas
@@ -76,6 +75,9 @@ st.bar_chart(data=chart_data, x="возраст", y="отношение")
 
 # график изменить
 dfopr=pd.DataFrame([[101, 'ivanov', 'муж', 'да'], [102, 'петров', 'муж', 'нет'], [103, 'сидорова', 'жен', 'да'], [104, 'коровин', 'муж', 'нет'], [105, 'кузнецов', 'муж', 'да'], [106, 'дубова', 'жен', 'нет'], [107, 'зайкина', 'жен', 'да']], columns=['id', 'fio', 'gender', 'otvet'])
+val_count  = dfopr['gender'].value_counts()
+st.bar_chart(data=dfopr, x='gender', y=dfopr['gender'].value_counts())
+
 dfopr
 dfopr1=pd.DataFrame([['Earth', 1], ['Moon', 0.606], ['Mars', 0.107], ['Венера', 0.807]], columns=['name', 'mass'])
 st.bar_chart(data=dfopr1, x='name', y='mass')
