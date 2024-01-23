@@ -3,7 +3,7 @@ import streamlit as st
 # импортируем библиотеку pandas
 import pandas as pd
 import numpy as np
-import seaborn as sns
+
 
 st.markdown("# Туризм")
 st.sidebar.markdown("# главная page 🎈")
