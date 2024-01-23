@@ -79,9 +79,7 @@ dfopr
 val_count  = dfopr['gender'].value_counts()
 val_count
 df1 = dfopr['gender'].value_counts().rename_axis('unique_values').reset_index(name='counts')
-st.bar_chart(data=df1)
-
-# x='gender', y='counts')
+st.bar_chart(data=df1, x='unique_values', y='counts')
 
 
 dfopr1=pd.DataFrame([['Earth', 1], ['Moon', 0.606], ['Mars', 0.107], ['Венера', 0.807]], columns=['name', 'mass'])
