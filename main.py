@@ -1,3 +1,4 @@
+import seaborn as sns
 # импортируем библиотеку streamlit
 import streamlit as st
 # импортируем библиотеку pandas
