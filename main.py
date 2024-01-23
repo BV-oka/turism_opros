@@ -47,7 +47,6 @@ col2.metric(label="возраст", value=age)
 col3.metric(label="отношение", value=att)
 
 
-
 if gender == 'муж':
     st.sidebar.write("вы выбрали респондентов мужчин в возрасте", age)
 else:
