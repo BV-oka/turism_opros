@@ -47,11 +47,6 @@ col1, col2, col3 = st.columns(3)
 col1.metric(label="пол", value=gender)
 col2.metric(label="возраст", value=age)
 col3.metric(label="отношение", value=att)
-# конец оформления боковой панели
-
-
-# полоска 
-st.divider()
 
 
 if gender == 'муж':
@@ -62,14 +57,22 @@ else:
 # ещё полоска
 st.sidebar.divider()
 
+# конец оформления боковой панели
 
+
+# полоска 
+st.divider()
 
 # читаем таблицу с опросом
 df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
 
-
 # данные из таблицы для графика
 chart_data = pd.DataFrame(df, columns=["пол", "возраст", "отношение"])
+
+# фильтр таблицы для графиков
+# ..............................!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
 
 # график измененный 1
 val_count  = chart_data['возраст'].value_counts()
@@ -85,7 +88,6 @@ st.bar_chart(data=df1, x='unique_values', y='counts')
 
 
 
-
 # таблица с опросом вывести на экран целиком
 # st.dataframe(df)
 
@@ -94,7 +96,6 @@ st.bar_chart(data=df1, x='unique_values', y='counts')
 
 
 # фильтр таблицы
-
 
 # rslt_df = df[(df.пол == 'муж') & (df.возраст == 'до 35 лет') & (df.отношение == 'положительное')] 
 rslt_df = df[(df.пол == 'муж') & (df.возраст == age) & (df.отношение == 'положительное')]
