@@ -3,6 +3,7 @@ import streamlit as st
 # импортируем библиотеку pandas
 import pandas as pd
 import numpy as np
+import seaborn as sns
 
 st.markdown("# Туризм")
 st.sidebar.markdown("# главная page 🎈")
@@ -62,6 +63,10 @@ df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
 
 
 
+# график
+chart_data = pd.DataFrame(df, columns=["пол", "возраст", "отношение"])
+
+st.bar_chart(chart_data)
 
 
 # график
