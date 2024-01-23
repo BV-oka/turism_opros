@@ -76,7 +76,7 @@ st.bar_chart(chart_data)
 # график изменить
 dfopr=pd.DataFrame([[101, 'ivanov', 'муж', 'да'], [102, 'петров', 'муж', 'нет'], [103, 'сидорова', 'жен', 'да'], [104, 'коровин', 'муж', 'нет'], [105, 'кузнецов', 'муж', 'да'], [106, 'дубова', 'жен', 'нет'], [107, 'зайкина', 'жен', 'да']], columns=['id', 'fio', 'gender', 'otvet'])
 dfopr
-dfopr1=pd.DataFrame(['Earth', 1], ['Moon', 0.606], ['Mars', 0.107], ['Венера', 0.807]), columns=['name', 'mass']
+dfopr1=pd.DataFrame([['Earth', 1], ['Moon', 0.606], ['Mars', 0.107], ['Венера', 0.807]], columns=['name', 'mass'])
 st.bar_chart(dfopr1) 
 # , 'name', 'mass')
 
