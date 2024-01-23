@@ -78,7 +78,7 @@ dfopr=pd.DataFrame([[101, 'ivanov', 'муж', 'да'], [102, 'петров', 'м
 dfopr
 val_count  = dfopr['gender'].value_counts()
 val_count
-st.bar_chart(data=dfopr, x=val_count.index, y=val_count.values)
+st.bar_chart(data=dfopr['gender'].value_counts(), x=val_count.index, y=val_count.values)
 
 
 dfopr1=pd.DataFrame([['Earth', 1], ['Moon', 0.606], ['Mars', 0.107], ['Венера', 0.807]], columns=['name', 'mass'])
