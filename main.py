@@ -74,16 +74,7 @@ chart_data = pd.DataFrame(df, columns=["возраст", "отношение"])
 st.bar_chart(chart_data)
 
 # график изменить
-st.write("test")
 
-data = [["Star 1", 1], ["Star 2", 1], ["Star 3", 1],
-["Star 1", 1], ["Star 2", 1], ["Star 3", 1]]
-
-df2 = pd.DataFrame(data, columns = ["Star", "Vote"])
-itemcrosstab=pd.crosstab(df2.Star,df2.Vote)
-itemcrosstab_text=itemcrosstab[1].to_list()
-fig = px.bar(itemcrosstab.index, title="Long-Form Input",text=itemcrosstab_text)
-fig.show()
 
 
 # таблица с опросом вывести на экран целиком
