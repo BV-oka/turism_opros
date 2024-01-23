@@ -75,9 +75,10 @@ st.bar_chart(data=chart_data, x="возраст", y="отношение")
 
 # график изменить
 dfopr=pd.DataFrame([[101, 'ivanov', 'муж', 'да'], [102, 'петров', 'муж', 'нет'], [103, 'сидорова', 'жен', 'да'], [104, 'коровин', 'муж', 'нет'], [105, 'кузнецов', 'муж', 'да'], [106, 'дубова', 'жен', 'нет'], [107, 'зайкина', 'жен', 'да']], columns=['id', 'fio', 'gender', 'otvet'])
+dfopr
 val_count  = dfopr['gender'].value_counts()
 val_count
-# st.bar_chart(data=dfopr, x='gender', y=dfopr['gender'].value_counts())
+# st.bar_chart(data=val_count, x='gender', y='count')
 
 dfopr
 dfopr1=pd.DataFrame([['Earth', 1], ['Moon', 0.606], ['Mars', 0.107], ['Венера', 0.807]], columns=['name', 'mass'])
