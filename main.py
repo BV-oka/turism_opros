@@ -71,7 +71,7 @@ st.bar_chart(chart_data)
 # график
 chart_data = pd.DataFrame(df, columns=["возраст", "отношение"])
 
-st.bar_chart(chart_data)
+st.bar_chart(data=chart_data, x="возраст", y="отношение")
 
 # график изменить
 dfopr=pd.DataFrame([[101, 'ivanov', 'муж', 'да'], [102, 'петров', 'муж', 'нет'], [103, 'сидорова', 'жен', 'да'], [104, 'коровин', 'муж', 'нет'], [105, 'кузнецов', 'муж', 'да'], [106, 'дубова', 'жен', 'нет'], [107, 'зайкина', 'жен', 'да']], columns=['id', 'fio', 'gender', 'otvet'])
