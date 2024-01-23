@@ -68,21 +68,16 @@ st.sidebar.divider()
 df = pd.read_csv("datasets/Opros_po_razvitiiu_turizma.csv")
 
 
-# график
+# данные из таблицы для графика
 chart_data = pd.DataFrame(df, columns=["пол", "возраст", "отношение"])
-
-st.bar_chart(chart_data)
-
 
 # график измененный 1
-chart_data = pd.DataFrame(df, columns=["пол", "возраст", "отношение"])
 val_count  = chart_data['возраст'].value_counts()
 val_count
 df1 = chart_data['возраст'].value_counts().rename_axis('unique_values').reset_index(name='counts')
 st.bar_chart(data=df1, x='unique_values', y='counts')
 
 # график измененный 2
-chart_data = pd.DataFrame(df, columns=["возраст", "отношение"])
 val_count  = chart_data['отношение'].value_counts()
 val_count
 df1 = chart_data['отношение'].value_counts().rename_axis('unique_values').reset_index(name='counts')
