@@ -25,7 +25,7 @@ st.sidebar.divider()
 # переключатель пола
 # gender = st.sidebar.radio("выберите пол респондентов: ", ('все','муж','жен'), horizontal=True)
 
-gender = st.multiselect('выберите пол респондентов: ', ['муж','жен'])
+gender = st.sidebar.multiselect('выберите пол респондентов: ', ['муж','жен'], placeholder="выберите пол респондентов")
 
 # ещё разделительная полоска
 st.sidebar.divider()
