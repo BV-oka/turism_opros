@@ -78,6 +78,10 @@ st.dataframe(chart_data)
 rslt_df = df[(df.пол == 'муж') & (df.возраст == 'до 35 лет') & (df.отношение == 'положительное')]
 st.dataframe(rslt_df)
 
+col1, col2 = st.columns(2)
+col1.metric(label="график 1", value=gender)
+col2.metric(label="график 2", value=age)
+
 
 # график измененный 1
 val_count  = chart_data['возраст'].value_counts()
