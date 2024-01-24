@@ -41,14 +41,6 @@ att = st.sidebar.radio("укажите отношение респонденто
 # ещё разделительная полоска
 st.sidebar.divider()
 
-st.success("Вы выбрали следующие параметры респондентов:")
-
-col1, col2, col3 = st.columns(3)
-col1.metric(label="пол", value=gender)
-col2.metric(label="возраст", value=age)
-col3.metric(label="отношение", value=att)
-
-
 if gender == 'муж':
     st.sidebar.write("вы выбрали респондентов мужчин в возрасте", age)
 else:
@@ -59,6 +51,14 @@ st.sidebar.divider()
 
 # конец оформления боковой панели
 
+# ----- ПАРАМЕТРЫ РЕСПОНДЕНТОВ -----
+
+st.success("Вы выбрали следующие параметры респондентов:")
+
+col1, col2, col3 = st.columns(3)
+col1.metric(label="пол", value=gender)
+col2.metric(label="возраст", value=age)
+col3.metric(label="отношение", value=att)
 
 # полоска 
 st.divider()
