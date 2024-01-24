@@ -3,7 +3,6 @@ import streamlit as st
 # импортируем библиотеку pandas
 import pandas as pd
 import numpy as np
-import matplotlib as plt
 
 st.markdown("# Туризм")
 
