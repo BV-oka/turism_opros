@@ -74,7 +74,7 @@ chart_data = pd.DataFrame(df, columns=["пол", "возраст", "отноше
 st.dataframe(chart_data)
 bb = age
 # rslt_df = df[(df.пол == 'жен') & (df.возраст == 'все') & (df.отношение == 'положительное')]
-rslt_df = df[(df.пол == 'муж') & (df.возраст == bb) & (df.отношение == 'положительное')]
+rslt_df = df[(df.пол == 'муж') & (df.возраст == str(bb)) & (df.отношение == 'положительное')]
 st.dataframe(rslt_df)
 
 
