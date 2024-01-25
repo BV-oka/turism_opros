@@ -49,6 +49,11 @@ else:
 # ещё полоска
 st.sidebar.divider()
 
+def sidebar_input_features():
+    gender = st.sidebar.radio("выберите пол респондентов: ", ('все','муж','жен'), horizontal=True)
+
+
+
 # конец оформления боковой панели
 
 # ----- ПАРАМЕТРЫ РЕСПОНДЕНТОВ -----
