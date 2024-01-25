@@ -48,10 +48,30 @@ else:
 st.sidebar.divider()
 
 def sidebar_input_features():
-    gender = st.sidebar.multiselect('выберите пол респондентов: ', ['мужской','женский'], placeholder="пол респондентов")
-    age = st.sidebar.multiselect("укажите возраст респондентов: ", ['до 35 лет', '36-45 лет','46-55 лет', 'старше 55 лет'], placeholder="возраст респондентов")
-    att = st.sidebar.multiselect("укажите отношение респондентов к туристам: ", ['положительное', 'отрицательное'], placeholder="выбор отношение")
+    gender = st.sidebar.multiselect("выберите пол респондентов: ", ["мужской","женский"], placeholder="пол респондентов")
+    age = st.sidebar.multiselect("укажите возраст респондентов: ", ["до 35 лет", "36-45 лет","46-55 лет", "старше 55 лет"], placeholder="возраст респондентов")
+    att = st.sidebar.multiselect("укажите отношение респондентов к туристам: ", ["положительное", "отрицательное"], placeholder="выбор отношение")
 
+    translatetion = {
+        "мужской": "муж",
+        "женский": "жен",
+        "до 35 лет": "",
+        "36-45 лет": "",
+        "46-55 лет": "",
+        "старше 55 лет": "",
+        "положительное": "",
+        "отрицательное"
+    }
+
+    data = {
+        "": translatetion[],
+        "": translatetion[],
+        "": translatetion[],
+    }
+
+    df = pd.DataFrame(data, index=[0])
+
+    return df
 
 
 # конец оформления боковой панели
