@@ -24,8 +24,6 @@ st.sidebar.divider()
 # переключатель пола
 gender = st.sidebar.radio("выберите пол респондентов: ", ('все','муж','жен'), horizontal=True)
 
-# gender = st.sidebar.multiselect('выберите пол респондентов: ', ['муж','жен'], placeholder="выберите пол респондентов")
-
 # ещё разделительная полоска
 st.sidebar.divider()
 
@@ -50,7 +48,9 @@ else:
 st.sidebar.divider()
 
 def sidebar_input_features():
-    gender = st.sidebar.radio("выберите пол респондентов: ", ('все','муж','жен'), horizontal=True)
+    gender = st.sidebar.multiselect('выберите пол респондентов: ', ['муж','жен'], placeholder="пол респондентов")
+    age = st.sidebar.multiselect("укажите возраст респондентов: ", ['до 35', '36-45','46-55', 'старше 55'], placeholder="возраст респондентов")
+    att = st.sidebar.multiselect("укажите отношение респондентов к туристам: ", ['положительное', 'отрицательное'], placeholder="выбор отношение")
 
 
 
