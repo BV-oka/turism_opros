@@ -85,6 +85,8 @@ options = st.multiselect(
 
 st.write('You selected:', options)
 
+options
+
 
 # ----- ПАРАМЕТРЫ РЕСПОНДЕНТОВ -----
 
