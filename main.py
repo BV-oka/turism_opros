@@ -73,8 +73,8 @@ def sidebar_input_features():
 
     return df
 
-st.write('## Ваши данные')
-df
+# st.write('## Ваши данные')
+# df
 
 # конец оформления боковой панели
 
