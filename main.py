@@ -87,7 +87,7 @@ options
 
 df = pd.DataFrame(options)
 df
-dfnew = df[0].tolist()
+dfnew = list(df[0])
 dfnew
 
 col1, col2 = st.columns(2)
