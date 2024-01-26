@@ -124,7 +124,7 @@ options3
 
 genderist = st.multiselect("выберите пол респондентов: ", ["мужской","женский"], placeholder="пол респондентов")
 gend = pd.DataFrame(genderist)
-lll = list(gend[0])
+lll = list(gend[])
 
 # rslt_df = df[(df.пол == 'муж') & (df.возраст == 'до 35 лет') & (df.отношение == 'положительное')]
 rslt_df = df[(df.пол.isin(lll)) & (df.возраст == 'до 35 лет') & (df.отношение == 'положительное')]
