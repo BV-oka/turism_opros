@@ -88,6 +88,8 @@ options
 df = pd.DataFrame(options)
 df
 
+dfnew=df['0']
+
 col1, col2 = st.columns(2)
 col1.metric(label="пол", value='hjkkkkk')
 col2.metric(label="возраст", value='ghbvk')
