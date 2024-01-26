@@ -89,7 +89,7 @@ options
 df = pd.DataFrame(options)
 df
 col1, col2 = st.columns(2)
-col1.metric(label="пол", value=df[1])
+col1.metric(label="пол", value='hjkkk')
 col2.metric(label="возраст", value='ghbvk')
 
 
