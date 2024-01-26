@@ -88,6 +88,10 @@ st.write('You selected:', options)
 options
 df = pd.DataFrame(options)
 df
+col1, col2 = st.columns(2)
+col1.metric(label="пол", value=df[1])
+col2.metric(label="возраст", value='ghbvk')
+
 
 # ----- ПАРАМЕТРЫ РЕСПОНДЕНТОВ -----
 
