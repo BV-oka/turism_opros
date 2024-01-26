@@ -89,6 +89,7 @@ df = pd.DataFrame(options)
 df
 
 dfnew=df[0].tolist
+dfnew
 
 col1, col2 = st.columns(2)
 col1.metric(label="пол", value='hjkkkkk')
