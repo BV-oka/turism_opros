@@ -69,7 +69,7 @@ def sidebar_input_features():
         "отношение": translatetion[att],
     }
 
-    df = pd.DataFrame(data, index=[0])
+    df = pd.DataFrame(data)
 
     return df
 
