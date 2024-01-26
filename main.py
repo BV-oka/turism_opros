@@ -86,7 +86,8 @@ options = st.multiselect(
 st.write('You selected:', options)
 
 options
-
+df = pd.DataFrame(options, index=[0])
+df
 
 # ----- ПАРАМЕТРЫ РЕСПОНДЕНТОВ -----
 
