@@ -69,12 +69,12 @@ def sidebar_input_features():
         "отношение": translatetion[att],
     }
 
-    df_ = pd.DataFrame(data, index=[0])
+    df = pd.DataFrame(data, index=[0])
 
-    return df_
+    return df
 
 st.write('## Ваши данные')
-df_
+df
 
 # конец оформления боковой панели
 
