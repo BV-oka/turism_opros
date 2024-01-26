@@ -87,7 +87,8 @@ options
 
 df = pd.DataFrame(options)
 df
-
+dfnew = list(df)
+dfnew
 
 col1, col2 = st.columns(2)
 col1.metric(label="пол", value='hjkkkkk')
