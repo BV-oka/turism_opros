@@ -73,6 +73,7 @@ def sidebar_input_features():
 
     return df
 
+sidebar_input_features()
 
 # конец оформления боковой панели
 
