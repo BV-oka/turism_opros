@@ -64,9 +64,9 @@ def sidebar_input_features():
     }
 
     data = {
-        "": translatetion[],
-        "": translatetion[],
-        "": translatetion[],
+        "пол": translatetion[gender],
+        "возраст": translatetion[age],
+        "отношение": translatetion[att],
     }
 
     df5 = pd.DataFrame(data, index=[0])
