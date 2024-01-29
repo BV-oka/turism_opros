@@ -26,12 +26,12 @@ def show_main_page():
 
 
 def process_side_bar_inputs():
-    sidebar_input_features()
-
-def sidebar_input_features():
     # пояснения для ввода пользовательских настроек 
     st.sidebar.markdown("### Для анализа результатов опроса выберите параметры респондентов")
+    user_input_df = sidebar_input_features()
 
+def sidebar_input_features():
+    
     gender = st.sidebar.multiselect("выберите пол респондентов: ", ["мужской","женский"], placeholder="пол респондентов")
     # разделительная полоска
     st.sidebar.divider()
