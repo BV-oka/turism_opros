@@ -16,6 +16,9 @@ def show_main_page():
     layout="wide"
 )
 
+def process_side_bar_inputs():
+    sidebar_input_features()
+
 def sidebar_input_features():
     gender = st.sidebar.multiselect("выберите пол респондентов: ", ["мужской","женский"], placeholder="пол респондентов")
     age = st.sidebar.multiselect("укажите возраст респондентов: ", ["до 35 лет", "36-45 лет","46-55 лет", "старше 55 лет"], placeholder="возраст респондентов")
