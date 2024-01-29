@@ -15,6 +15,15 @@ def show_main_page():
     page_icon="🎈",
     layout="wide"
 )
+    st.markdown("# Туризм")
+
+    # подзаголовок
+    st.subheader("муниципальное образование город Алексин")
+
+    # заголовок
+    st.header("визуализация результатов опроса по развитию туризма")
+
+
 
 def process_side_bar_inputs():
     sidebar_input_features()
