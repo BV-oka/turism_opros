@@ -30,13 +30,13 @@ def write_user_data():
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.markdown("## пол")
+        st.markdown("### пол")
     
     with col2:
-        st.markdown("## возраст")
+        st.markdown("### возраст")
     
     with col3:
-        st.markdown("## отношение")
+        st.markdown("### отношение")
 
 def process_side_bar_inputs():
     # пояснения для ввода пользовательских настроек 
