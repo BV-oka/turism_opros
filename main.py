@@ -16,6 +16,9 @@ def show_main_page():
     layout="wide"
 )
 
+if __name__=="__main__":
+    process_main_page()
+
 st.markdown("# Туризм")
 
 # подзаголовок
