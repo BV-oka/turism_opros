@@ -31,9 +31,11 @@ def write_user_data():
 
     with col1:
         st.markdown("### пол")
+        st.write("gender")
     
     with col2:
         st.markdown("### возраст")
+        st.write(age)
     
     with col3:
         st.markdown("### отношение")
