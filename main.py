@@ -130,22 +130,23 @@ gend = pd.DataFrame(genderist)
 rslt_df = df[(df.пол.isin(gend)) & (df.возраст == 'до 35 лет') & (df.отношение == 'положительное')]
 st.dataframe(rslt_df)
 
-col1, col2 = st.columns(2)
-col1.metric(label="график 1", value=gender)
-col2.metric(label="график 2", value=age)
-
+col1, col2 = st.columns((7,3))
 
 # график измененный 1
-val_count  = chart_data['возраст'].value_counts()
-val_count
-df1 = chart_data['возраст'].value_counts().rename_axis('unique_values').reset_index(name='counts')
-st.bar_chart(data=df1, x='unique_values', y='counts')
+with col1:
+    st.markdown("## график 1")
+    val_count  = chart_data['возраст'].value_counts()
+    val_count
+    df1 = chart_data['возраст'].value_counts().rename_axis('unique_values').reset_index(name='counts')
+    st.bar_chart(data=df1, x='unique_values', y='counts')
 
 # график измененный 2
-val_count  = chart_data['отношение'].value_counts()
-val_count
-df1 = chart_data['отношение'].value_counts().rename_axis('unique_values').reset_index(name='counts')
-st.bar_chart(data=df1, x='unique_values', y='counts')
+with col2:
+    st.markdown("## график 2")
+    val_count  = chart_data['отношение'].value_counts()
+    val_count
+    df1 = chart_data['отношение'].value_counts().rename_axis('unique_values').reset_index(name='counts')
+    st.bar_chart(data=df1, x='unique_values', y='counts')
 
 
 
