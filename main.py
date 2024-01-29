@@ -35,7 +35,7 @@ def write_user_data():
     
     with col2:
         st.markdown("### возраст")
-        st.write(age)
+        st.write(sidebar_input_features.age)
     
     with col3:
         st.markdown("### отношение")
