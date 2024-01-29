@@ -67,10 +67,3 @@ options = st.multiselect(
 
 st.write('You selected:', options)
 
-options
-
-df = pd.DataFrame(options)
-df
-dfnew = list(df[0])
-dfnew
-
