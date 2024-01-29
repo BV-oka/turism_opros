@@ -25,7 +25,7 @@ def show_main_page():
 
     write_user_data()
 
-def write_user_data():
+def write_user_data(df):
     st.success("Вы выбрали следующие параметры респондентов:")
     col1, col2, col3 = st.columns(3)
 
