@@ -23,18 +23,19 @@ def show_main_page():
     # заголовок
     st.header("визуализация результатов опроса по развитию туризма")
 
+    write_user_data()
+
 def write_user_data():
     st.success("Вы выбрали следующие параметры респондентов:")
     col1, col2, col3 = st.columns(3)
 
-with col1:
+    with col1:
     st.markdown("## пол")
     
-
-with col2:
+    with col2:
     st.markdown("## возраст")
     
-with col3:
+    with col3:
     st.markdown("## отношение")
 
 def process_side_bar_inputs():
