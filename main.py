@@ -4,6 +4,12 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+st.set_page_config(
+    page_title="Туризм Алексин",
+    page_icon="🎈",
+    layout="wide"
+)
+
 st.markdown("# Туризм")
 
 # подзаголовок
@@ -148,7 +154,23 @@ with col2:
     df1 = chart_data['отношение'].value_counts().rename_axis('unique_values').reset_index(name='counts')
     st.bar_chart(data=df1, x='unique_values', y='counts')
 
+col3, col4 = st.columns((3,7))
 
+# график измененный 3
+with col1:
+    st.markdown("## график 1")
+    val_count  = chart_data['возраст'].value_counts()
+    val_count
+    df1 = chart_data['возраст'].value_counts().rename_axis('unique_values').reset_index(name='counts')
+    st.bar_chart(data=df1, x='unique_values', y='counts')
+
+# график измененный 4
+with col2:
+    st.markdown("## график 2")
+    val_count  = chart_data['отношение'].value_counts()
+    val_count
+    df1 = chart_data['отношение'].value_counts().rename_axis('unique_values').reset_index(name='counts')
+    st.bar_chart(data=df1, x='unique_values', y='counts')
 
 # таблица с опросом вывести на экран целиком
 # st.dataframe(df)
@@ -164,18 +186,6 @@ rslt_df = df[(df.пол == 'муж') & (df.возраст == age) & (df.отно
 st.dataframe(rslt_df)
 st.info("ответы респондентов на вопрос: Какие событийные мероприятия, по Вашему мнению, будут интересны жителям и гостям города?")
 st.dataframe(rslt_df["ответ"])
-
-
-# Текст
-st.sidebar.text("Просто текст")
-
-
-st.sidebar.info("Information")
-st.sidebar.warning("Warning")
-st.sidebar.error("Error")
-# st.snow()
-# st.balloons()
-
 
 
 if st.sidebar.button('я кнопка -  Нажми на меня'):
