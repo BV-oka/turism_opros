@@ -29,8 +29,17 @@ def process_side_bar_inputs():
     sidebar_input_features()
 
 def sidebar_input_features():
+    # пояснения для ввода пользовательских настроек 
+    st.sidebar.markdown("### Для анализа результатов опроса выберите параметры респондентов")
+
     gender = st.sidebar.multiselect("выберите пол респондентов: ", ["мужской","женский"], placeholder="пол респондентов")
+    # разделительная полоска
+    st.sidebar.divider()
+
     age = st.sidebar.multiselect("укажите возраст респондентов: ", ["до 35 лет", "36-45 лет","46-55 лет", "старше 55 лет"], placeholder="возраст респондентов")
+    # разделительная полоска
+    st.sidebar.divider()
+
     att = st.sidebar.multiselect("укажите отношение респондентов к туристам: ", ["положительное", "отрицательное"], placeholder="выбор отношение")
 
 
