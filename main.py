@@ -72,6 +72,6 @@ def sidebar_input_features():
 process_main_page()
 
 # разделительная полоска
-st.sidebar.divider()
+st.divider()
 gggg = st.multiselect("выберите: ", ["первое","второе"], placeholder="тест")
     
