@@ -61,7 +61,7 @@ def sidebar_input_features():
 
     att = st.sidebar.multiselect("укажите отношение респондентов к туристам: ", ["положительное", "отрицательное"], placeholder="выбор отношение", help="выберите показатели")
     
-    return gender
+    #return gender
 
 process_main_page()
 
