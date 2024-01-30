@@ -43,7 +43,7 @@ def write_user_data():
 def process_side_bar_inputs():
     # пояснения для ввода пользовательских настроек 
     st.sidebar.markdown("### Для анализа результатов опроса выберите параметры респондентов")
-    #user_input_df = sidebar_input_features()
+    user_input_df = sidebar_input_features()
 
 def sidebar_input_features():
     
@@ -56,7 +56,7 @@ def sidebar_input_features():
     st.sidebar.divider()
 
     att = st.sidebar.multiselect("укажите отношение респондентов к туристам: ", ["положительное", "отрицательное"], placeholder="выбор отношение")
-    st.write(gender)
+    
     
     # data = {
     #     "Gender": gender,
