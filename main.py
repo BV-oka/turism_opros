@@ -56,12 +56,13 @@ def sidebar_input_features():
     st.sidebar.divider()
 
     att = st.sidebar.multiselect("укажите отношение респондентов к туристам: ", ["положительное", "отрицательное"], placeholder="выбор отношение")
-
-    data = {
-        "Gender": gender,
-        "Age": age,
-        "Att": att,
-    }
+    st.write(gender)
+    
+    # data = {
+    #     "Gender": gender,
+    #     "Age": age,
+    #     "Att": att,
+    # }
 
     df = pd.DataFrame(data, index=[0])
     return df
