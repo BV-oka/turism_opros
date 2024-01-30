@@ -50,7 +50,7 @@ def process_side_bar_inputs():
 
 def sidebar_input_features():
 
-    gender = st.sidebar.multiselect("выберите пол респондентов: ", ["мужской","женский"], placeholder="пол респондентов", help="выберите показатели")
+    gender = pd.DataFrame(st.sidebar.multiselect("выберите пол респондентов: ", ["мужской","женский"], placeholder="пол респондентов", help="выберите показатели"))
     # разделительная полоска
     st.sidebar.divider()
     
@@ -67,7 +67,7 @@ def sidebar_input_features():
     # }
 
     # df = pd.DataFrame(data, index=[0])
-    #return df
+    #return gender
 
 process_main_page()
 
