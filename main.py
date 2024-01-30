@@ -32,7 +32,7 @@ def write_user_data():
     with col1:
         st.markdown("### пол")
         st.write("gender")
-        sidebar_input_features()
+        
     
     with col2:
         st.markdown("### возраст")
