@@ -71,3 +71,5 @@ gggg = pd.DataFrame(st.multiselect("выберите: ", ["первое","вто
 gggg
 gggg.values
 
+
+
