@@ -46,7 +46,7 @@ def process_side_bar_inputs():
     st.sidebar.markdown("### Для анализа результатов опроса выберите параметры респондентов")
     
     user_input_df = sidebar_input_features()
-    st.write(user_input_df)
+   
 
 def sidebar_input_features():
 
