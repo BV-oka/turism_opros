@@ -25,7 +25,7 @@ def show_main_page():
 
     write_user_data()
 
-def write_user_data(df):
+def write_user_data():
     st.success("Вы выбрали следующие параметры респондентов:")
     col1, col2, col3 = st.columns(3)
 
@@ -43,7 +43,7 @@ def write_user_data(df):
 def process_side_bar_inputs():
     # пояснения для ввода пользовательских настроек 
     st.sidebar.markdown("### Для анализа результатов опроса выберите параметры респондентов")
-    user_input_df = sidebar_input_features()
+    #user_input_df = sidebar_input_features()
 
 def sidebar_input_features():
     
@@ -64,7 +64,7 @@ def sidebar_input_features():
     #     "Att": att,
     # }
 
-    df = pd.DataFrame(data, index=[0])
-    return df
+    # df = pd.DataFrame(data, index=[0])
+    #return df
 
 process_main_page()
