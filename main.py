@@ -32,7 +32,7 @@ def write_user_data():
     with col1:
         st.markdown("### пол")
         st.write("gender")
-        #gender
+        sidebar_input_features()
     
     with col2:
         st.markdown("### возраст")
@@ -61,14 +61,7 @@ def sidebar_input_features():
 
     att = st.sidebar.multiselect("укажите отношение респондентов к туристам: ", ["положительное", "отрицательное"], placeholder="выбор отношение", help="выберите показатели")
     
-    # data = {
-    #     "Gender": gender,
-    #     "Age": age,
-    #     "Att": att,
-    # }
-
-    # df = pd.DataFrame(data, index=[0])
-    #return gender
+    return gender
 
 process_main_page()
 
