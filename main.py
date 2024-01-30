@@ -73,6 +73,6 @@ process_main_page()
 
 # разделительная полоска
 st.divider()
-gggg = st.multiselect("выберите: ", ["первое","второе"], placeholder="тест", max_selections=2, help="выберите показатели")
-df = pd.DataFrame(gggg, index=[0])
+gggg = st.multiselect("выберите: ", ["первое","второе"], placeholder="тест", help="выберите показатели")
+df = pd.DataFrame(gggg)
 df
