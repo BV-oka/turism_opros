@@ -69,7 +69,7 @@ process_main_page()
 st.divider()
 gggg = pd.DataFrame(st.multiselect("выберите: ", ["первое","второе"], placeholder="тест", help="выберите показатели"))
 gggg
-gggg.values()
+gggg.values[0]
 
 # df = pd.DataFrame(gggg)
 # df
