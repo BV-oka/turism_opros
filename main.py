@@ -29,6 +29,7 @@ def write_user_data():
     st.success("Вы выбрали следующие параметры респондентов:")
     
     sidebar_input_features()
+    gender
     
     col1, col2, col3 = st.columns(3)
 
