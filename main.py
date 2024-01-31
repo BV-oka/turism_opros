@@ -29,14 +29,13 @@ def show_main_page():
 def write_user_data():
     st.success("Вы выбрали следующие параметры респондентов:")
     
-    
-        
+          
     col1, col2, col3 = st.columns(3)
 
     with col1:
         st.markdown("### пол")
         st.write("gender")
-        
+       
     
     with col2:
         st.markdown("### возраст")
