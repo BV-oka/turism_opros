@@ -27,14 +27,14 @@ def show_main_page():
 
 def write_user_data():
     st.success("Вы выбрали следующие параметры респондентов:")
-    user_input_df = sidebar_input_features()
+    #user_input_df = sidebar_input_features()
     
     col1, col2, col3 = st.columns(3)
 
     with col1:
         st.markdown("### пол")
         st.write("gender")
-        user_input_df
+        #user_input_df
     
     with col2:
         st.markdown("### возраст")
