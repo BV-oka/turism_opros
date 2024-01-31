@@ -43,14 +43,15 @@ def write_user_data():
 
 def process_side_bar_inputs():
     
-    # пояснения для ввода пользовательских настроек 
-    st.sidebar.markdown("### Для анализа результатов опроса выберите параметры респондентов")
-    
+       
     user_input_df = sidebar_input_features()
    
 
 def sidebar_input_features():
 
+    # пояснения для ввода пользовательских настроек 
+    st.sidebar.markdown("### Для анализа результатов опроса выберите параметры респондентов")
+    
     gender = pd.DataFrame(st.sidebar.multiselect("выберите пол респондентов: ", ["мужской","женский"], placeholder="пол респондентов", help="выберите показатели"))
     # разделительная полоска
     st.sidebar.divider()
