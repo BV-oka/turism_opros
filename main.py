@@ -7,7 +7,7 @@ import numpy as np
 
 def process_main_page():
     show_main_page()
-    process_side_bar_inputs()
+    #process_side_bar_inputs()
 
 def show_main_page():
     st.set_page_config(
@@ -27,14 +27,15 @@ def show_main_page():
 
 def write_user_data():
     st.success("Вы выбрали следующие параметры респондентов:")
-    #user_input_df = sidebar_input_features()
+    
+    sidebar_input_features()
     
     col1, col2, col3 = st.columns(3)
 
     with col1:
         st.markdown("### пол")
         st.write("gender")
-        #user_input_df
+        gender
     
     with col2:
         st.markdown("### возраст")
@@ -43,9 +44,9 @@ def write_user_data():
     with col3:
         st.markdown("### отношение")
 
-def process_side_bar_inputs():
+# def process_side_bar_inputs():
     
-    user_input_df = sidebar_input_features()
+#     user_input_df = sidebar_input_features()
     
    
 
