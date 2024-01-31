@@ -35,7 +35,7 @@ def write_user_data():
     with col1:
         st.markdown("### пол")
         st.write("gender")
-        st.write(gender)
+        
     
     with col2:
         st.markdown("### возраст")
