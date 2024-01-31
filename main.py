@@ -8,6 +8,7 @@ import numpy as np
 def process_main_page():
     show_main_page()
     #process_side_bar_inputs()
+    sidebar_input_features()
 
 def show_main_page():
     st.set_page_config(
@@ -28,9 +29,8 @@ def show_main_page():
 def write_user_data():
     st.success("Вы выбрали следующие параметры респондентов:")
     
-    sidebar_input_features()
-    gender
     
+        
     col1, col2, col3 = st.columns(3)
 
     with col1:
